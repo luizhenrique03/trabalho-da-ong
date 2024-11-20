@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte de tudo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Casa Verde Afogados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo da ong.jpeg" alt="Logo da Casa Verde Afogados" width="150px">
+                </a>
+            </div>
+            <nav class="menu desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio">
+            <h1>Bem-vindo à Casa Verde Afogados</h1>
+            <p>Ajudando a construir uma comunidade mais saudável e inclusiva através de serviços essenciais.</p>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A <strong>Casa Verde Afogados</strong> é uma organização não governamental comprometida com o bem-estar da comunidade local. 
+               Nossa missão é oferecer serviços acessíveis e de qualidade para melhorar a vida das pessoas.</p>
+            <p>Fundada com o objetivo de atender as necessidades mais urgentes da população, focamos em áreas essenciais como saúde e cidadania.</p>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma variedade de serviços para atender as necessidades da comunidade:</p>
+            <ul>
+                <li>Atendimentos médicos e odontológicos.</li>
+                <li>Emissão de documentos essenciais (RG, CPF, Carteira de Trabalho).</li>
+                <li>Programas de saúde preventiva e conscientização.</li>
+            </ul>
+            
+            <div class="galeria">
+                <h3>Veja nosso trabalho em ação</h3>
+                <div class="imagens">
+                    <img src="img/img ong 3.jpeg" alt="Serviço 1" width="200px">
+                    <img src="img/img ong.jpeg" alt="Serviço 2" width="200px">
+                    <img src="img/img ong 4.jpeg" alt="Serviço 3" width="200px">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Agendamento -->
+        <section id="agendamento">
+            <h2>Agendamento</h2>
+            <p>Preencha o formulário abaixo para realizar seu agendamento:</p>
+            <form action="#" method="post" class="form-agendamento">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="servico">Serviço Desejado:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="medico">Atendimento Médico</option>
+                    <option value="odontologico">Atendimento Odontológico</option>
+                    <option value="documentos">Emissão de Documentos</option>
+                </select>
+
+                <label for="data">Data do Agendamento:</label>
+                <input type="date" id="data" name="data" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Casa Verde Afogados. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
